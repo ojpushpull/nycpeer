@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { menuItemsData } from './tmenu'
 import {  container,
     heading,
     navLinks,
@@ -48,10 +49,19 @@ const Layout = ({ pageTitle, children }) => {
                 Jobs
             </Link>
           </li>
-          <li className={navLinkItem}>
+          <li class="dropdown" className={navLinkItem}>
+            <Button class="dropbtn">Resources
+            <i class="fa fa-caret-down"></i>
+           
+            </Button>
+            <div class="dropdown-content">
             <Link to="/resources" className={navLinkText}>
                 Resources
             </Link>
+            <Link to="/resources" className={navLinkText}>
+                Resources
+            </Link>
+            </div>
           </li>
         </ul>
       </nav>
