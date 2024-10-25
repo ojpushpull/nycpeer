@@ -17,13 +17,17 @@ const Layout = ({ pageTitle, children }) => {
         site{
             siteMetadata{
                 title
+                menuLinks {
+                  name
+                  link
+                }
             }
         }
     }
     ` )
     return (
         <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <header  className={siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -51,11 +55,17 @@ const Layout = ({ pageTitle, children }) => {
                 Jobs
             </Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/resources" className={navLinkText}>
-                Resources
-            </Link>
-          </li>
+          {data.site.siteMetadata.menuLinks.map(link => (
+                <li className={navLinkItem}
+                  key={link.name}
+                 
+                >
+                  <Link style={{ color: `black` }} to={link.link}>
+                    {link.name}
+                  </Link>
+                </li>
+                ))}
+
         </ul>
       </nav>
       <main>

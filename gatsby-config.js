@@ -10,6 +10,20 @@
 module.exports = {
   siteMetadata: {
     title: "My FIrst Gatsby Site",
+    menuLinks:[
+            {
+               name:'tres',
+               link:'/'
+            },
+            {
+               name:'crpares',
+               link:'/page-2'
+            },
+            {
+              name:'sares',
+              link:'/page-3'
+           }
+          ]
   },
   plugins: [
     "gatsby-plugin-image",
