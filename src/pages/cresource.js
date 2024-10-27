@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 const CresourcePage = () => {
     return (
         <Layout pageTitle="Resources for CRPA">
-            <p>Hi There this my site</p>
+            <p> </p> 
         </Layout>
     )
 }
