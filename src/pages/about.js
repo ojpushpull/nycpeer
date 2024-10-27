@@ -4,7 +4,9 @@ import Layout from '../components/layout'
 const AboutPage = () => {
     return (
         <Layout pageTitle="About Me">
-            <p>Hi There this my site</p>
+            <p> A website setup with all the different resources a CRPA could need. </p>
+            
+            
         </Layout>
     )
 }
