@@ -17,7 +17,7 @@ module.exports = {
             },
             {
                name:'crpares',
-               link:'/page-2'
+               link:'/cresource'
             },
             {
               name:'sares',
