@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Hero from './hero'
 
 
 import { Link, useStaticQuery, graphql } from 'gatsby'
@@ -7,7 +8,8 @@ import {  container,
     navLinks,
     navLinkItem,
     navLinkText,
-    siteTitle, } from './layout.module.css'
+    siteTitle,
+    hero, } from './layout.module.css'
 
    
 const Layout = ({ pageTitle, children }) => {
@@ -27,6 +29,7 @@ const Layout = ({ pageTitle, children }) => {
     ` )
     return (
         <div className={container}>
+          <Hero className={hero}></Hero>
       <header  className={siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>

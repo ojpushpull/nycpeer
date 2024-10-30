@@ -70,3 +70,14 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
+  .hero {
+    display: block;
+    max-width: 780px;
+    max-height: 1280px;
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    color: rebeccapurple;
+  }
